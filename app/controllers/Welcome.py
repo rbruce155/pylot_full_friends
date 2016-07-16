@@ -74,9 +74,4 @@ class Welcome(Controller):
             }
         print edit_friend
         self.models['WelcomeModel'].edit_submit(edit_friend)
-
-        return redirect('/')
-
-
-
-
+        return redirect('/edit/'+str(id) )
